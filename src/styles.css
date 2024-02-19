@@ -1,90 +1,76 @@
-body{
-    font-family: 'Oswald', sans-serif;
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 section {
-    background-color: #ffffff;
-    scroll-behavior: smooth;
+    background-color: white;
 }
 
-.hero{
+.hero {
     background-color: #1c1d25;
     height: 100vh;
     color: white;
     font-size: 40px;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 80px;
-    background-color: black;
-    scroll-behavior: smooth;
-    height: 36vw;
 }
 
-nav{
+nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
-#nav-list{
-    margin: 10px 20px 0px 0px;
-}
-
-ul{
+ul {
     display: flex;
     list-style-type: none;
     width: 500px;
     justify-content: space-around;
     font-size: 30px;
-    margin: 0;
 }
 
-
-li{
-    
+li {
     text-decoration: none;
 }
 
-h1{
+h1 {
     font-size: 90px;
     margin: 0;
 }
 
-h2{
+h2 {
     font-size: 50px;
-    margin: 0;
 }
 
-p{
+p {
     margin: 0;
     font-size: 30px;
     font-weight: 300;
 }
 
-.sub-text{
+.subtext {
     font-size: 15px;
     font-weight: 300;
 }
 
-.hero-area{
+.hero-area {
     display: flex;
     height: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero-text{
-    margin-top: 0; 
+.hero-text {
     margin-left: 80px;
     margin-bottom: 200px;
 }
 
-.button{
+.button {
     width: 200px;
     height: 55px;
     border-radius: 30px;
@@ -96,102 +82,70 @@ p{
     margin-top: 20px;
 }
 
-.button:hover{
+.button:hover {
     background-color: #ef744b;
 }
 
-.button:active{
-    background-color: #a9a9a9;
+.button:active {
+    background-color: #A9A9A9;
     color: #808080;
 }
 
-.socials{
+.socials {
     padding-bottom: 200px;
 }
 
-.logo{
-    height: 200px;
-    position: relative;
-    background-color: transparent;
-    border-radius: 75%;
+.logo {
+    height: 80px;
+    margin: 30px;
 }
-
-.social{
+.social {
     margin: 20px;
 }
 
-.sub-section{
+.sub-section {
     display: flex;
     justify-content: space-around;
     padding: 80px;
-    height: 100vh;
 }
 
-.sub-section-alternative{
-    height: 100vh;
+.sub-section-alternative {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 60px, 80px, 80px, 80px;
+    padding: 80px;
 }
 
-#about-me{
-    border-bottom: 2px solid #000;
-    padding-bottom: 10px;
-}
-
-.headshot{
+.headshot {
     width: 300px;
     border-radius: 150px;
     margin-left: 80px;
 }
-.headshot-container{
+
+.headshot-container {
     display: flex;
     align-items: center;
 }
 
-.project-card{
+.project-card {
     width: 300px;
     height: 500px;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
 }
 
-.project-container{
+.project-container {
     display: flex;
     justify-content: space-around;
 }
 
-#contact-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-
-    input,
-textarea {
-    width: 50%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-}
-
-
-#send-button{
-    color:rgb(255, 255, 255);
-}
-
-
-
-
-@media only screen and (max-width: 1000px){
-    .project-container{
+@media only screen and (max-width: 1000px) {
+    .project-container {
         display: flex;
         flex-wrap: wrap;
     }
 }
+
 .project-image {
     margin-top: 25px;
     width: 250px;
@@ -203,7 +157,7 @@ hr {
     margin-right: 20px;
 }
 
-.project-link{
+.project-link {
     text-decoration: none;
     color: #ef744b;
 }
@@ -213,9 +167,41 @@ a {
     color: white;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
+
+.hamburger:focus{
+    outline: 0;
+}
+
+form {
+    max-width: 200%; 
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 1000px) {
     .hamburger {
@@ -227,24 +213,24 @@ a {
         margin: 20px;
         align-self: flex-end;
     }
-    
+
     ul {
-            display: none;
-            background-color: #2b2c38;
-            margin: 0px;
-        }
-    
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
+    }
+
     ul.show {
-            display: block;
-        }
-    
+        display: block;
+    }
+
     nav {
-            display: flex;
-            flex-direction: column-reverse;
-            background-color: #2b2c38;
-        }
-    
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
     .logo {
-            display: none;
-        }
+        display: none;
+    }
 }
