@@ -24,7 +24,9 @@ footer {
 nav {
     display: flex;
     justify-content: space-between;
+    
 }
+
 
 ul {
     display: flex;
@@ -96,8 +98,9 @@ p {
 }
 
 .logo {
-    height: 80px;
-    margin: 30px;
+    height: auto;
+    margin: 0px;
+    border-radius: 50%;
 }
 .social {
     margin: 20px;
@@ -139,6 +142,7 @@ p {
     justify-content: space-around;
 }
 
+
 @media only screen and (max-width: 1000px) {
     .project-container {
         display: flex;
@@ -149,7 +153,8 @@ p {
 .project-image {
     margin-top: 25px;
     width: 250px;
-    border-radius: 125px;
+    height: 250px;
+    border-radius: 1px;
 }
 
 hr {
